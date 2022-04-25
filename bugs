@@ -1,0 +1,6 @@
+1)react_devtools_backend.js:3973 Warning: Can't perform a React state update on an unmounted component. This is a no-op, but it indicates a memory leak in your application. To fix, cancel all subscriptions and asynchronous tasks in a useEffect cleanup function.
+    at HomeImage (http://localhost:3000/static/js/bundle.js:971:86)
+    at div
+    at Home
+
+2)SingleProductDisplay addtoCart tooltip on refresh doesn't persist the title

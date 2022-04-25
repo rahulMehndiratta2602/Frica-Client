@@ -1,0 +1,224 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+svg {
+    vertical-align: baseline;
+}
+
+:root {
+    --primary-color: #3d5a80;
+    --light-primary-color: #98c1d9;
+    --lightest-primary-color: #e0fbfc;
+    --secondary-color: #ee6c4d;
+    --tertiary-color: #31a34e;
+    --text-color: #293241;
+}
+@layer base {
+    .unselectable {
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+    html {
+    }
+    body {
+        @apply md:px-5   scroll-smooth;
+        font-family: "Syne Mono", monospace !important;
+        background-image: url("../public/img/register-background2.jpg");
+        background-size: 100vw 135.4vh;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+    @media screen and (max-width: 480px) {
+        body {
+            @apply scrollhost;
+        }
+    }
+    body.modal-open {
+        overflow: hidden;
+    }
+    * {
+        @apply select-none;
+        font-family: inherit;
+    }
+    .nav-link {
+        @apply flex space-x-2 items-center hover:text-primary hover:bg-white cursor-pointer px-1 py-1 text-white;
+    }
+    .form {
+        @apply w-full sm:w-[500px]  bg-primary flex flex-col items-center px-2 xxs:px-12 pb-20 pt-10 border-light xxs:border-[12px] rounded-md space-y-6 font-montserrat;
+    }
+    .form-submit {
+        @apply bg-secondary px-4 text-sm xxs:text-lg rounded-full hover:opacity-90 text-white hover:text-white border-b-2 border-r-[1px] border-light  hover:border-r-2 hover:translate-x-[-1px] hover:translate-y-[-2px] focus:outline-none focus:ring-1 focus:ring-lightest cursor-pointer;
+    }
+    .btn-secondary {
+        @apply bg-tertiary px-4 text-sm md:text-base py-1 rounded-full hover:opacity-90 text-white hover:text-white border-b-2 border-r-[1px] border-light  hover:border-r-2 hover:translate-x-[-1px] hover:translate-y-[-2px] focus:outline-none focus:ring-1 focus:ring-lightest cursor-pointer;
+    }
+    .form-admin {
+        @apply w-full relative h-full bg-primary flex flex-col px-2 sm:px-8 pt-4 pb-4 border-light sm:border-[4px]  space-y-3 overflow-hidden;
+    }
+    .grid-dense {
+        grid-auto-flow: dense;
+    }
+    .form-admin-input-container {
+        @apply w-full block text-center space-y-2 sm:space-y-0 sm:flex sm:items-center sm:space-x-4;
+    }
+    .form-admin-input {
+        @apply h-[30px] text-sm relative rounded-sm text-center focus:ring-2 focus:ring-slate-500 focus:outline-none;
+    }
+    .form-admin-select {
+        @apply block h-[30px] text-xs text-gray-700 bg-white rounded-sm !px-1  focus:ring-2 focus:ring-slate-500 focus:outline-none;
+    }
+    .loader {
+        @apply w-[70px] flex;
+    }
+    .loader span {
+        @apply w-[10px] h-[48px] my-0 mx-[1px] bg-black scale-y-[0.1];
+        animation: loading 1.2s ease-in-out infinite;
+    }
+    .loader span:nth-child(1) {
+        @apply bg-primary;
+        animation-delay: 0.1s;
+    }
+    .loader span:nth-child(2) {
+        @apply bg-secondary;
+        animation-delay: 0.2s;
+    }
+    .loader span:nth-child(3) {
+        @apply bg-tertiary;
+        animation-delay: 0.3s;
+    }
+    .loader span:nth-child(4) {
+        @apply bg-primary;
+        animation-delay: 0.4s;
+    }
+    .loader span:nth-child(5) {
+        @apply bg-secondary;
+        animation-delay: 0.5s;
+    }
+    .loader span:nth-child(6) {
+        @apply bg-tertiary;
+        animation-delay: 0.6s;
+    }
+
+    .scrollhost {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .scrollhost::-webkit-scrollbar {
+        display: none;
+    }
+    .glow {
+        @apply text-xl sm:text-4xl sm:tracking-[2px]  text-white uppercase font-montserrat font-bold  px-2 py-2 rounded-sm !leading-[30px];
+        outline: none !important;
+        border: none !important;
+        animation: glow 5s ease-in infinite;
+    }
+    .home-heading-container {
+        @apply pt-4 pb-0 bg-slate-600 flex items-center justify-center;
+    }
+    @keyframes glow {
+        0%,
+        12.5%,
+        25%,
+        37.5%,
+        50%,
+        62.5%,
+        75%,
+        87.5%,
+        99% {
+            color: white;
+            box-shadow: none;
+        }
+
+        10%,
+        20%,
+        30%,
+        40%,
+        60%,
+        70%,
+        80%,
+        90%,
+        100% {
+            @apply text-[#9cf1ed];
+            box-shadow: 0 0 4px #03bcf4, 0 0 8px #03bcf4, 0 0 12px #03bcf4,
+                0 0 16px #03bcf4, 0 0 20px #03bcf4, 0 0 20px 10px #03bcf4;
+        }
+    }
+    .glow2 {
+        @apply text-white  font-montserrat font-bold  px-2 py-2;
+        outline: none !important;
+        border: none !important;
+        animation: glow2 7s ease-in-out infinite;
+    }
+    @keyframes glow2 {
+        0%,
+        12.5%,
+        25%,
+        37.5%,
+        50%,
+        62.5%,
+        75%,
+        87.5%,
+        99% {
+            color: white;
+            text-shadow: none;
+        }
+
+        10%,
+        20%,
+        30%,
+        40%,
+        60%,
+        70%,
+        80%,
+        90%,
+        100% {
+            @apply text-[#9cf1ed];
+            text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff, 2px 2px 10px #ff0000,
+                2px 2px 20px #ff0000;
+        }
+    }
+    @keyframes loading {
+        0% {
+            transform: scaleY(0.1);
+        }
+        25% {
+            transform: scaleY(1);
+        }
+        50%,
+        100% {
+            transform: scaleY(0.1);
+        }
+    }
+
+    .shop {
+        display: grid;
+        grid-template-columns: 2fr 10fr;
+        grid-template-areas: sidebar products;
+    }
+    .table-heading {
+        @apply py-1 border-r-[1px] border-white text-white bg-slate-600;
+    }
+    .table-body-heading {
+        @apply text-[9px] py-1 border-slate-300 border-r-[1px] xxs:text-xs text-slate-700;
+    }
+    .order-header-label {
+        @apply bg-slate-600 text-xs leading-[22px] w-64 xs:w-48 text-center text-white py-0 h-max;
+    }
+    .order-header-p {
+        @apply text-xs bg-white w-64 xs:w-52 leading-[22px] text-center text-text h-max;
+    }
+    .order-header-label-wrapper {
+        @apply flex flex-col xs:flex-row border-[1px] border-black h-[44px] xs:h-[22px];
+    }
+    .order-header-label-wrapper-borderless {
+        @apply flex flex-col xs:flex-row  h-[44px] xs:h-[22px] w-full justify-center;
+    }
+    .order-header-input {
+        @apply text-xs bg-white w-64 xs:w-52 leading-[22px] text-center text-text h-max focus:outline-none;
+    }
+}

@@ -1,0 +1,1 @@
+console.log(Array.from({ length: 28 }, (val, i) => i + 2))
