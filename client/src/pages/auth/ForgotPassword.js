@@ -31,31 +31,33 @@ const ForgotPassword = () => {
         })
     }
     return (
-        <form
-            className="form"
-            onSubmit={handleSubmit}
-        >
-            <img src="/img/logo2.png" className="w-[70px]" alt="" />
+        <div className="w-full flex items-center justify-center xxs:py-[112px] py-[128px] bg-slate-800 bg-opacity-80">
+            <form
+                className="form"
+                onSubmit={handleSubmit}
+            >
+                <img src="/img/logo2.png" className="w-[70px]" alt="" />
 
-            <h1
-                className="font-extrabold text-xl text-lightest"
-            >
-                Forgot Password
+                <h1
+                    className="font-extrabold text-xl text-lightest"
+                >
+                    Forgot Password
             </h1>
-            <input
-                type="email"
-                placeholder="Enter your email"
-                className="text-center focus rounded-lg w-[90%] focus:ring-secondary focus:outline-none"
-                onChange={(e) => setEmail(e.target.value)}
-                value={email}
-            />
-            <button
-                type="submit"
-                className="bg-secondary px-4 py-2 text-lg rounded-full hover:opacity-90 text-white hover:text-white border-b-2 border-r-[1px] border-light  hover:border-r-2 hover:translate-x-[-1px] hover:translate-y-[-2px] focus:outline-none focus:ring-1 focus:ring-lightest disabled:opacity-60"
-                disabled={!email}
-            >
-                {loading ? "Loading..." : "Reset Password"}</button>
-        </form>
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                    className="text-center focus rounded-lg w-[90%] focus:ring-secondary focus:outline-none"
+                    onChange={(e) => setEmail(e.target.value)}
+                    value={email}
+                />
+                <button
+                    type="submit"
+                    className="form-submit disabled:opacity-60"
+                    disabled={!email}
+                >
+                    {loading ? "Loading..." : "Reset Password"}</button>
+            </form>
+        </div>
     )
 }
 
