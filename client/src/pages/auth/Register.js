@@ -18,9 +18,9 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            console.log(process.env.REACT_APP_REGISTER_REDIRECT_URL)
-            console.log(process.env.REACT_APP_PASSWORD_RESET_REDIRECT_URL)
-            console.log(process.env.URL)
+            // console.log(process.env.REACT_APP_REGISTER_REDIRECT_URL)
+            // console.log(process.env.REACT_APP_PASSWORD_RESET_REDIRECT_URL)
+            // console.log(process.env.URL)
             const config = {
                 url: process.env.REACT_APP_REGISTER_REDIRECT_URL,
                 handleCodeInApp: true

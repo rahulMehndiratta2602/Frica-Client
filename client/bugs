@@ -3,4 +3,95 @@
     at div
     at Home
 
-2)SingleProductDisplay addtoCart tooltip on refresh doesn't persist the title
+2)SingleProductDisplay addtoCart tooltip on refresh doesn't persist the title //cleared
+
+
+/***********Warnings********/
+
+
+Line 20:8:  React Hook useEffect has a missing dependency: 'order._id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+7:00:39 PM: src/components/CartProduct.js
+7:00:39 PM:   Line 1:10:   'useState' is defined but never used                                                                                                                                                                                                                                                                                                                                      no-unused-vars
+7:00:39 PM:   Line 83:21:  The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+7:00:39 PM: src/components/FileUpload.js
+7:00:39 PM:   Line 19:46:  Array.prototype.map() expects a return value from arrow function                                           array-callback-return
+7:00:39 PM:   Line 52:29:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+7:00:39 PM: src/components/HomeImage.js
+7:00:39 PM:   Line 4:7:     'aspectRatio' is assigned a value but never used                                                                                                                                                 no-unused-vars
+7:00:39 PM:   Line 51:45:   Array.prototype.map() expects a return value from arrow function                                                                                                                                 array-callback-return
+7:00:39 PM:   Line 67:45:   Array.prototype.map() expects a return value from arrow function                                                                                                                                 array-callback-return
+7:00:39 PM:   Line 81:45:   Array.prototype.map() expects a return value from arrow function                                                                                                                                 array-callback-return
+7:00:39 PM:   Line 93:8:    React Hook useEffect has a missing dependency: 'getImages'. Either include it or remove the dependency array                                                                                     react-hooks/exhaustive-deps
+7:00:39 PM:   Line 126:36:  Redundant alt attribute. Screen-readers already announce `img` tags as an image. You don’t need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop  jsx-a11y/img-redundant-alt
+7:00:39 PM: src/components/HomeSection.js
+7:00:39 PM:   Line 35:8:  React Hook useEffect has a missing dependency: 'fetchProducts'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+7:00:39 PM: src/components/Invoice.js
+7:00:39 PM:   Line 8:17:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+7:00:39 PM: src/components/Nav.js
+7:00:39 PM:   Line 10:9:   'SubMenu' is assigned a value but never used  no-unused-vars
+7:00:39 PM:   Line 10:18:  'Item' is assigned a value but never used     no-unused-vars
+7:00:39 PM: src/components/ProductCard.js
+7:00:39 PM:   Line 14:11:  'location' is assigned a value but never used  no-unused-vars
+7:00:39 PM: src/components/ShopSideNav.js
+7:00:39 PM:   Line 82:8:  React Hook useEffect has missing dependencies: 'dispatch', 'filter', 'location?.state?.from', and 'locationState'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+7:00:39 PM: src/components/SingleProductDisplay/Footer.js
+7:00:39 PM:   Line 18:37:  Redundant alt attribute. Screen-readers already announce `img` tags as an image. You don’t need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop  jsx-a11y/img-redundant-alt
+7:00:39 PM: src/components/SingleProductDisplay/ImageCarousel.js
+7:00:39 PM:   Line 12:17:  No duplicate props allowed                                                                                 react/jsx-no-duplicate-props
+7:00:39 PM:   Line 18:28:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+7:00:39 PM:   Line 22:21:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+7:00:39 PM: src/components/SingleProductDisplay/ProductInfo.js
+7:00:39 PM:   Line 93:21:   The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+7:00:39 PM:   Line 105:37:  The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+7:00:39 PM: src/functions/cart.js
+7:00:39 PM:   Line 6:27:  Invalid typeof comparison value  valid-typeof
+7:00:39 PM: src/pages/Admin/Category/index.js
+7:00:39 PM:   Line 30:19:  'res' is assigned a value but never used  no-unused-vars
+7:00:39 PM: src/pages/Admin/SubCategory/index.js
+7:00:39 PM:   Line 40:19:  'res' is assigned a value but never used  no-unused-vars
+7:00:39 PM: src/pages/Admin/index.js
+7:00:39 PM:   Line 15:12:  'timer' is assigned a value but never used     no-unused-vars
+7:00:39 PM:   Line 15:19:  'setTimer' is assigned a value but never used  no-unused-vars
+7:00:39 PM: src/pages/Admin/product/CreateProduct.js
+7:00:41 PM: Creating deploy upload records
+7:00:39 PM:   Line 1:8:   'Search' is defined but never used                                                                                       no-unused-vars
+7:00:39 PM:   Line 56:8:  React Hook useEffect has a missing dependency: 'fetchCategories'. Either include it or remove the dependency array       react-hooks/exhaustive-deps
+7:00:39 PM:   Line 62:8:  React Hook useEffect has a missing dependency: 'handleCategoryChange'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+7:00:39 PM: src/pages/Admin/product/UpdateProduct.js
+7:00:39 PM:   Line 1:8:    'Search' is defined but never used                                                                                                                 no-unused-vars
+7:00:39 PM:   Line 5:10:   'createProduct' is defined but never used                                                                                                          no-unused-vars
+7:00:42 PM: Failed during stage 'building site': Build script returned non-zero exit code: 2 (https://ntl.fyi/exit-code-2)
+7:00:39 PM:   Line 68:46:  Array.prototype.map() expects a return value from arrow function                                                                                   array-callback-return
+7:00:39 PM:   Line 76:8:   React Hook useEffect has missing dependencies: 'fetchCategories', 'params.slug', and 'values'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+7:00:39 PM:   Line 82:8:   React Hook useEffect has a missing dependency: 'handleCategoryChange'. Either include it or remove the dependency array                            react-hooks/exhaustive-deps
+7:00:39 PM: src/pages/Admin/product/index.js
+7:00:39 PM:   Line 1:8:   'Search' is defined but never used  no-unused-vars
+7:00:39 PM:   Line 4:10:  'toast' is defined but never used   no-unused-vars
+7:00:39 PM: src/pages/Cart.js
+7:00:39 PM:   Line 1:10:  'useEffect' is defined but never used  no-unused-vars
+7:00:39 PM:   Line 1:21:  'useState' is defined but never used   no-unused-vars
+7:00:39 PM: src/pages/Checkout.js
+7:00:39 PM:   Line 1:8:   'axios' is defined but never used                                                                                                         no-unused-vars
+7:00:39 PM:   Line 24:8:  React Hook useEffect has a missing dependency: 'user'. Either include it or remove the dependency array                                   react-hooks/exhaustive-deps
+7:00:39 PM:   Line 54:8:  React Hook useEffect has missing dependencies: 'cart' and 'dispatch'. Either include them or remove the dependency array                  react-hooks/exhaustive-deps
+7:00:39 PM:   Line 58:8:  React Hook useEffect has missing dependencies: 'cart.products.length' and 'navigate'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+7:00:39 PM: src/pages/Home.js
+7:00:39 PM:   Line 2:10:  'useEffect' is defined but never used  no-unused-vars
+7:00:39 PM: src/pages/PaymentSuccess.js
+7:00:39 PM:   Line 11:26:  'setSearchParams' is assigned a value but never used                                                             no-unused-vars
+7:00:39 PM:   Line 18:8:   React Hook useEffect has a missing dependency: 'searchParams'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+7:00:39 PM:   Line 29:8:   React Hook useEffect has a missing dependency: 'dispatch'. Either include it or remove the dependency array      react-hooks/exhaustive-deps
+7:00:39 PM: src/pages/Shop.js
+7:00:39 PM:   Line 10:11:  'dispatch' is assigned a value but never used                                                                       no-unused-vars
+7:00:39 PM:   Line 13:12:  'searchParams' is assigned a value but never used                                                                   no-unused-vars
+7:00:39 PM:   Line 25:8:   React Hook useEffect has a missing dependency: 'setSearchParams'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+7:00:39 PM: src/pages/SingleProductDisplay.js
+7:00:39 PM:   Line 33:8:  React Hook useEffect has a missing dependency: 'params.slug'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+7:00:39 PM: src/pages/auth/Login.js
+7:00:39 PM:   Line 33:8:  React Hook useEffect has a missing dependency: 'location?.state?.from'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+7:00:39 PM: src/reducers/cartReducer.js
+7:00:39 PM:   Line 8:23:  Invalid typeof comparison value 
+
+
+
+
