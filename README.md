@@ -1,4 +1,6 @@
 ## ![enter image description here](https://frica.netlify.app/img/logo.png)
+# Model
+![enter image description here](https://res.cloudinary.com/frica/image/upload/v1650934637/1650934637664.jpg)
 
 Frica is a feature enriched, completely functional, one hundred percent responsive dynamic e-commerce application primarily designed for my Dad's new clothing business. I have spent around 40 days coding this and made myself capable of doing it again in half time. If anyone wants to try out the admin page he/she can send me an email to mongodbreactnode@gmail.com.
 I can provide the credentials.
