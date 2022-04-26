@@ -82,6 +82,10 @@ I can provide the credentials.
     address
     Coupon
     Pay Online 
+    Enter the card details (Test Mood):
+    - Card No. : 4242 4242 4242 4242
+    - Expiry date: (Any date after today would work)
+    - CVV: 222(Any 3 digit number)
     Cash on Delievery
     Responsive
 
